@@ -1,6 +1,6 @@
 <html>
     <head>
-      <title>Icode Login</title>
+      <title>iCode Register</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">      
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
@@ -12,31 +12,44 @@
 	<div class="row">
 		<div class="col s12 m8 offset-m2 l4 offset-l4" style="padding-top: 6%;">
         <div class="card-panel grey lighten-5 z-depth-1">
-			<h4 class="header2" style="vertical-align:center;">Icode Login</h4>
+			<h4 class="header2" style="vertical-align:center;">iCode Register</h4>
 			<form action="/loginPaction" method="post">
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">email</i>
-				  <input id="id" type="text" class="validate" name="iCode-id" autofocus required>
+				  <input id="id" type="text" class="validate" name="Pharmacy-id" autofocus required>
 				  <label for="id">Admin ID</label>
 				</div>
-			 
+			
 			  <div class="row">
 				<div class="input-field col s12">
-				  <i class="material-icons prefix">lock</i>&nbsp;&nbsp;
+				    <i class="material-icons prefix">lock</i>
 				  <input id="password" type="password" name="Password" class="validate" required>
 				  <label for="password">Password</label>
 				</div>
+                          <div class="row">
+				<div class="input-field col s12">
+				  <i class="material-icons prefix">lock</i>
+				  <input id="password" type="password" name="Password" class="validate" required>
+				  <label for="password">Confirm Password</label>
+				</div>
+                          <div class="row">
+				<div class="input-field col s12">
+				 <i class="material-icons prefix">cached</i> 				
+                                
+                             <input id="code" type="password" name="code" class="validate" required>
+				  <label for="code">Secret code</label>
+				</div>
 
 				<div class="input-field col s12">
-					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Login
+					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Register
 					  <i class="mdi-content-send right"></i>
 					</button>
 				</div>
 			  </div>
 			  
 			</form>
-			<p>New to us? <a href="icoderegister.html">Sign Up</a></p>
+			<p>Already Registered ?<a href="icodelogin.html">Login</a></p>
         </div>
     </div>
 	  
