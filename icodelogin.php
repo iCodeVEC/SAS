@@ -9,13 +9,13 @@
 	 $myusername = $_POST['iCode-id'];
 	 $mypassword = $_POST['Password']; 
 	 $sql = "SELECT * FROM confidential WHERE Email = '$myusername' and Password= '$mypassword'";
-	 $result = mysqli_query($conn,$sql) or die("error in inserting data in db" . mysql_error());
+	 $result = mysqli_query($conn,$sql) or die("error" . mysql_error());
 	 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 	 $count = mysqli_num_rows($result);
 	   
 	 if($count == 1) 
    {
-	   echo "Success";
+	   echo "Successfully logged in";
 	   exit;
 	  }
 		else 
